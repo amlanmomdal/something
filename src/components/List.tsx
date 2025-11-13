@@ -18,9 +18,14 @@ const List = () => {
                 {alertMessage}
             </p>
             <ul>
-                {item.map(item => (
-                    <li onClick={() => deleteItem(item.id, item.text)} key={item.id}>{item.text}</li>
-
+                {item.map((item) => (
+                    <li
+                        key={item.id}
+                        onClick={() => deleteItem(item.id, item.text)}
+                        className="cursor-pointer px-4 py-2 mb-2 rounded-lg bg-gray-100 hover:bg-red-100 hover:text-red-900 transition-all duration-300 shadow-sm hover:shadow-md text-black"
+                    >
+                        {item.text}
+                    </li>
                 ))}
             </ul>
         </>
