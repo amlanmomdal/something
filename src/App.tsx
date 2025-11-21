@@ -1,11 +1,11 @@
 import './App.css'
-import Post from './components/Post'
+import List from './components/List'
 
 function App() {
 
   return (
     <>
-    <Post/>
+    <List/>
     </>
   )
 }
