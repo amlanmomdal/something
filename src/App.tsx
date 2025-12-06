@@ -5,7 +5,7 @@ import type { NoteType } from './type'
 
 
 function App() {
-  const [notes, setNotes] = useState<NoteType[]>([
+  const [notes, _setNotes] = useState<NoteType[]>([
     { id: 1, content: '1 Note', isStar: false },
     { id: 2, content: '2 Note', isStar: true },
     { id: 3, content: '3 Note', isStar: true },
