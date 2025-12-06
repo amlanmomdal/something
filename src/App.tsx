@@ -1,11 +1,24 @@
+import { useState } from 'react'
 import './App.css'
-import List from './components/List'
+import Note from './components/Note'
+import type { NoteType } from './type'
+
 
 function App() {
+  const [notes, setNotes] = useState<NoteType[]>([
+    { id: 1, content: '1 Note', isStar: false },
+    { id: 2, content: '2 Note', isStar: true },
+    { id: 3, content: '3 Note', isStar: true },
+    { id: 4, content: '4 Note', isStar: false },
+    { id: 5, content: '5 Note', isStar: true },
+    { id: 6, content: '6 Note', isStar: true },
+
+  ])
+
 
   return (
     <>
-    <List/>
+      <Note notes={notes} />
     </>
   )
 }

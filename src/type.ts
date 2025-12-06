@@ -3,3 +3,9 @@ export type TodoType = {
     title: string;
     completed: boolean;
 };
+
+export type NoteType = {
+    id: number;
+    content: string;
+    isStar: boolean
+};
